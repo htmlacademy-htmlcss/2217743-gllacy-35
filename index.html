@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GllacyShop</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+  <body class="body-main">
+    <div class="container">
+      <header class="header-main">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <img src="images/logo.svg" alt="Логотип." width="138" height="56" class="logo-img">
+            </li>
+            <li class="navigation-item">
+              <a href="#">Каталог</a>
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.80812 1.0532C1.54777 0.792853 1.12566 0.792853 0.865306 1.0532C0.604957 1.31355 0.604957 1.73566 0.865306 1.99601L5.52565 6.65636C5.52771 6.65847 5.52979 6.66058 5.53189 6.66268C5.66259 6.79337 5.83404 6.85846 6.00534 6.85794C6.1753 6.85744 6.34511 6.79236 6.47478 6.66268C6.47687 6.66059 6.47894 6.6585 6.48099 6.65639L11.1414 1.99601C11.4017 1.73566 11.4017 1.31355 11.1414 1.0532C10.881 0.792853 10.4589 0.792853 10.1986 1.0532L6.00334 5.24842L1.80812 1.0532Z"
+                  fill="#2D3440" />
+              </svg>
+            </li>
+            <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+            <li class="navigation-item"><a href="#">О компании</a></li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-user-item nav-phone">
+              <a href="#">+7 800 555-86-28</a>
+            </li>
+            <li class="navigation-user-item nav-search">
+              <a href="#"><img src="images/loopa.svg" alt="Поиск."></a>
+            </li>
+            <li class="navigation-user-item nav-join">
+              <a href="#">
+                <img src="images/join.svg" alt="Вход." style="margin-right: 6px;">
+                <span>Вход</span>
+              </a>
+            </li>
+            <li class="navigation-user-item nav-shop">
+              <a href="#">
+                <img src="images/telejka.svg" alt="Тележка." style="margin-right: 8px;">
+                <span>2 товара</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-page">
+        <section class="presentation">
+          <div class="presentation-desk">
+            <h1>Нежный пломбир<br>
+              с клубничным джемом</h1>
+            <p>Натуральное мороженое из свежих сливок<br>
+              и молока с вкуснейшим клубничным джемом –<br>
+              это идеальный десерт для всей семьи. </p>
+              <button type="button">Заказать</button>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
+
 </html>
