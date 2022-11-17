@@ -171,7 +171,7 @@
             </li>
             <li class="tastes-item">
               <img src="images/t-bubblegum.png" class="ice-view" alt="Бабл-Гам.">
-              <h3>Бабл-Гам</h3>
+              <h3>Бабл-гам</h3>
               <p>Ванильный пломбир<br>со сладкой посыпкой</p>
               <div class="price-items">
                 <span class="price-weight">320 ₽/кг</span>
@@ -185,6 +185,95 @@
               </div>
             </li>
           </ul>
+        </section>
+        <section class="describing">
+          <div class="describing-block">
+            <h2>Магазин Глейси – это онлайн и офлайн-магазин по продаже<br>
+              мороженого собственного производства на развес</h2>
+            <ul class="describe-list">
+              <li class="describe-item ice-desk">
+                <img src="images/mini-ice.svg" alt="Мороженое.">
+                <p>Всё наше мороженое изготавливается на собственном<br>
+                  производстве с использованием современного<br>
+                  оборудования и проверенных временем технологий.</p>
+              </li>
+              <li class="describe-item cow-desk">
+                <img src="images/mini-cow.svg" alt="Коровка.">
+                <p>Закупка ингредиентов производится только<br>
+                  у проверенных фермерских хозяйств, с которыми<br>
+                  нас связывает долговременное сотрудничество.</p>
+              </li>
+              <li class="describe-item ice-desk">
+                <img src="images/mini-leaf.svg" alt="Листик.">
+                <p>Для приготовления мороженого используются сливки<br>
+                  и молоко высочайшего качества. Все ингредиенты<br>
+                  и добавки произведены из натурального сырья.</p>
+              </li>
+              <li class="describe-item ice-desk">
+                <img src="images/mini-term.svg" alt="Термометр.">
+                <p>Доставка нашего мороженого осуществляется в<br>
+                  специальном термопаке, который не даёт мороженому<br>
+                  растаять и позволяет сохранить превосходный вкус.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <aside class="blog-mailing">
+          <div class="blog">
+            <p>Новое в нашем блоге</p>
+            <h3>
+              10 способов сервировки<br>
+              фруктовых щербетов<br>
+              к столу
+            </h3>
+          </div>
+          <div class="mailing">
+            <div class="mailing-content">
+              <p>
+                Подпишитесь на нашу сладкую рассылку и будьте всегда<br>
+                в курсе всего самого вкусного, что у нас происходит. Обещаем<br>
+                не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form action="https://echo.htmlacademy.ru" method="post" class="mailing-form">
+                <label>
+                  <input type="email" required name="email" placeholder="email@example.com">
+                </label>
+                <button class="submit-mailing" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </aside>
+        <section class="ice-delivery">
+          <div class="desk-delivery">
+            <h2 class="delivery-title">Доставка любимого<br>мороженого на дом</h2>
+            <p class="delivery-info">
+              Хочется полакомиться любимым десертом,<br>
+              но нет времени съездить в магазин? Закажите<br>
+              доставку мороженого на дом, и курьер<br>
+              привезёт вам ваш заказ в течение часа!
+            </p>
+          </div>
+          <form action="https://echo.htmlacademy.ru" method="post" class="delivery-form">
+            <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся<br>
+              с вами, чтобы подтвердить заказ.</p>
+              <div class="field-block">
+                <p class="field-group">
+                  <img src="images/tooltip.svg" alt="Тултип." class="tooltip-1">
+                  <label for="delivery-date">Дата</label>
+                  <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
+                </p>
+                <p class="field-group">
+                  <label for="delivery-phone">Телефон</label>
+                  <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
+                </p>
+                <p class="field-group field-group-address">
+                  <img src="images/tooltip.svg" alt="Тултип." class="tooltip-2">
+                  <label for="delivery-address">Адрес</label>
+                  <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
+                </p>
+                <button type="submit" class="delivery-button">Отправить</button>
+              </div>
+          </form>
         </section>
       </main>
     </div>
