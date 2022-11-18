@@ -52,13 +52,31 @@
       </header>
       <main class="main-page">
         <section class="presentation">
-          <div class="presentation-desk">
-            <h1>Нежный пломбир<br>
-              с клубничным джемом</h1>
-            <p>Натуральное мороженое из свежих сливок<br>
-              и молока с вкуснейшим клубничным джемом –<br>
-              это идеальный десерт для всей семьи. </p>
-            <button type="button">Заказать</button>
+          <div class="presentation-content">
+            <div class="presentation-desk">
+              <h1>Нежный пломбир<br>
+                с клубничным джемом</h1>
+              <p>Натуральное мороженое из свежих сливок<br>
+                и молока с вкуснейшим клубничным джемом –<br>
+                это идеальный десерт для всей семьи. </p>
+              <button type="button">Заказать</button>
+            </div>
+            <div class="icecream-types">
+              <div class="current-icecream" id="circle-ice">
+                <img src="images/icecream-red.png" alt="Мороженое.">
+                <button class="toggle-left" id="left-color" onclick="colorSwitchLeft()">
+                </button>
+                <button class="toggle-right" id="right-color" onclick="colorSwitchRight()"></button>
+              </div>
+              <div class="blue-icecream">
+                <img src="images/icecream-blue-lil.png" alt="Мороженое.">
+              </div>
+              <div class="yellow-icecream">
+                <img src="images/icecream-yellow-lil.png" alt="Мороженое.">
+              </div>
+            </div>
+          </div>
+          <div class="social-block">
             <div class="bullets">
               <ul class="bullets-list">
                 <li class="bullets-item bullets-item-current"></li>
@@ -66,22 +84,6 @@
                 <li class="bullets-item"></li>
               </ul>
             </div>
-          </div>
-          <div class="icecream-types">
-            <div class="current-icecream" id="circle-ice">
-              <img src="images/icecream-red.png" alt="Мороженое.">
-              <button class="toggle-left" id="left-color" onclick="colorSwitchLeft()">
-              </button>
-              <button class="toggle-right" id="right-color" onclick="colorSwitchRight()"></button>
-            </div>
-            <div class="blue-icecream">
-              <img src="images/icecream-blue-lil.png" alt="Мороженое.">
-            </div>
-            <div class="yellow-icecream">
-              <img src="images/icecream-yellow-lil.png" alt="Мороженое.">
-            </div>
-          </div>
-          <div class="social-block">
             <ul class="social-list">
               <li class="social-item">
                 <a href="#"><img src="images/telegram.svg" alt="Телеграм."></a>
@@ -256,26 +258,69 @@
           <form action="https://echo.htmlacademy.ru" method="post" class="delivery-form">
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся<br>
               с вами, чтобы подтвердить заказ.</p>
-              <div class="field-block">
-                <p class="field-group">
-                  <img src="images/tooltip.svg" alt="Тултип." class="tooltip-1">
-                  <label for="delivery-date">Дата</label>
-                  <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
-                </p>
-                <p class="field-group">
-                  <label for="delivery-phone">Телефон</label>
-                  <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
-                </p>
-                <p class="field-group field-group-address">
-                  <img src="images/tooltip.svg" alt="Тултип." class="tooltip-2">
-                  <label for="delivery-address">Адрес</label>
-                  <input type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
-                </p>
-                <button type="submit" class="delivery-button">Отправить</button>
-              </div>
+            <div class="field-block">
+              <p class="field-group">
+                <img src="images/tooltip.svg" alt="Тултип." class="tooltip-1">
+                <label for="delivery-date">Дата</label>
+                <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020" required>
+              </p>
+              <p class="field-group">
+                <label for="delivery-phone">Телефон</label>
+                <input type="text" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
+              </p>
+              <p class="field-group field-group-address">
+                <img src="images/tooltip.svg" alt="Тултип." class="tooltip-2">
+                <label for="delivery-address">Адрес</label>
+                <input type="text" id="delivery-address" name="delivery-address"
+                  placeholder="ул. Большая Конюшенная, 19/8" required>
+              </p>
+              <button type="submit" class="delivery-button">Отправить</button>
+            </div>
           </form>
         </section>
+        <div class="contacts">
+          <div class="contacts-container">
+            <div class="address-block">
+              <p class="contacts-navigation">Адрес главного офиса<br>и офлайн-магазина:</p>
+              <address class="contacts-address">наб. реки Карповки,<br>
+                5 лит П, Санкт-Петербург</address>
+            </div>
+            <div class="phone-block">
+              <p class="contacts-navigation">Для заказов по телефону:</p>
+              <address class="contacts-address">
+                <a href="#">+7 (812) 812-12-12</a>
+              </address>
+              <p class="contacts-navigation contacts-time">(с 10 до 20 ежедневно)</p>
+            </div>
+            <button class="appointment-button" type="button">Форма обратной связи</button>
+          </div>
+        </div>
       </main>
+      <footer class="main-footer">
+        <div class="footer-container">
+          <ul class="social-menu-list">
+            <li class="social-menu-item">
+              <a href="#"><img src="images/telegram.svg" alt="Телеграм." class="social-ico"></a>
+            </li>
+            <li class="social-menu-item">
+              <a href="#"><img src="images/vk.svg" alt="Вк." class="social-ico"></a>
+            </li>
+            <li class="social-menu-item">
+              <a href="#"><img src="images/youtube.svg" alt="Ютуб." class="social-ico"></a>
+            </li>
+          </ul>
+          <ul class="menu-list">
+            <li class="menu-item menu-current"><a href="#">Для поставщиков</a></li>
+            <li class="menu-item"><a href="#">Наши документы</a></li>
+            <li class="menu-item"><a href="#">О производстве</a></li>
+            <li class="menu-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+          <div class="academy-block">
+            <a href="#"><img src="images/logo_htmlacademy.svg" alt="htmlacademy."></a>
+            <p class="date-text">Сделано в <span>.html academy</span> © 2022</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
