@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GllacyShop</title>
+  </head>
+
+  <body class="body-main">
+    <div class="container">
+      <header class="header-main header-catalog">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="index.html"><img src="images/logo.svg" alt="Логотип." width="138" height="56"
+                  class="logo-img"></a>
+            </li>
+            <li class="navigation-item navigation-item-list">
+              <a class="navigation-item-link" href="catalog.html">Каталог</a>
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.80812 1.0532C1.54777 0.792853 1.12566 0.792853 0.865306 1.0532C0.604957 1.31355 0.604957 1.73566 0.865306 1.99601L5.52565 6.65636C5.52771 6.65847 5.52979 6.66058 5.53189 6.66268C5.66259 6.79337 5.83404 6.85846 6.00534 6.85794C6.1753 6.85744 6.34511 6.79236 6.47478 6.66268C6.47687 6.66059 6.47894 6.6585 6.48099 6.65639L11.1414 1.99601C11.4017 1.73566 11.4017 1.31355 11.1414 1.0532C10.881 0.792853 10.4589 0.792853 10.1986 1.0532L6.00334 5.24842L1.80812 1.0532Z"
+                  fill="#2D3440" />
+              </svg>
+              <div class="block-types" id="block-types">
+                <p class="block-types-title">Новинки</p>
+                <ul class="product-list">
+                  <li class="product-item"><a href="#" class="product-item-link">Сливочное</a></li>
+                  <li class="product-item"><a href="#" class="product-item-link">Щербеты</a></li>
+                  <li class="product-item"><a href="#" class="product-item-link">Фруктовый лед</a></li>
+                  <li class="product-item"><a href="#" class="product-item-link">Мелонин</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="navigation-item"><a class="navigation-item-link" href="#">Доставка и оплата</a></li>
+            <li class="navigation-item"><a class="navigation-item-link" href="#">О компании</a></li>
+          </ul>
+          <ul class="navigation-user">
+            <li class="navigation-user-item nav-phone">
+              <a href="#">+7 800 555-86-28</a>
+            </li>
+            <li class="navigation-user-item nav-search">
+              <a href="#"><img src="images/loopa.svg" alt="Поиск."></a>
+            </li>
+            <li class="navigation-user-item nav-join">
+              <a href="#">
+                <img src="images/join.svg" alt="Вход." style="margin-right: 6px;">
+                <span>Вход</span>
+              </a>
+            </li>
+            <li class="navigation-user-item nav-shop">
+              <a href="#">
+                <img src="images/telejka.svg" alt="Тележка." style="margin-right: 8px;">
+                <span>2 товара</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-page">
+        <header class="inner-header">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a href="index.html" class="breadcrumbs-link">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="#" class="breadcrumbs-link">Каталог</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="#" class="breadcrumbs-link
+              breadcrumbs-link-current">Сливочное мороженое</a>
+            </li>
+          </ul>
+          <h1 class="inner-header-title">Сливочное мороженое</h1>
+        </header>
+        <section class="section-filter">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Сортировка</legend>
+              <select aria-label="Сортировка" class="select-control">
+                <option value="popular">по популярности</option>
+                <option value="cheap">дешевле</option>
+                <option value="expensive">дороже</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
+              <input type="range">
+            </fieldset>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Жирность:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="radio" name="Жирность" class="control-input" value="0%" checked>
+                    0%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="radio" name="Жирность" class="control-input" value="до 10%">
+                    до 10%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="radio" name="Жирность" class="control-input" value="до 30%">
+                    до 30%
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="radio" name="Жирность" class="control-input" value="выше 30%">
+                    выше 30%
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Наполнители:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="checkbox" name="шоколадные" class="control-input" checked>
+                    шоколадные
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="checkbox" name="сахарные посыпки" class="control-input" checked>
+                    сахарные посыпки
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="checkbox" name="фрукты" class="control-input">
+                    фрукты
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="checkbox" name="сиропы" class="control-input">
+                    сиропы
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label>
+                    <input type="checkbox" name="джемы" class="control-input">
+                    джемы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <button class="filter-button" type="submit">Применить</button>
+          </form>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="footer-container">
+          <ul class="social-menu-list">
+            <li class="social-menu-item">
+              <a href="#"><img src="images/telegram.svg" alt="Телеграм." class="social-ico"></a>
+            </li>
+            <li class="social-menu-item">
+              <a href="#"><img src="images/vk.svg" alt="Вк." class="social-ico"></a>
+            </li>
+            <li class="social-menu-item">
+              <a href="#"><img src="images/youtube.svg" alt="Ютуб." class="social-ico"></a>
+            </li>
+          </ul>
+          <ul class="menu-list">
+            <li class="menu-item menu-current"><a href="#">Для поставщиков</a></li>
+            <li class="menu-item"><a href="#">Наши документы</a></li>
+            <li class="menu-item"><a href="#">О производстве</a></li>
+            <li class="menu-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+          <div class="academy-block">
+            <a href="#"><img src="images/logo_htmlacademy.svg" alt="htmlacademy."></a>
+            <p class="date-text">Сделано в <span>.html academy</span> © 2022</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+
+</html>
